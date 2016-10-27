@@ -1,4 +1,7 @@
 defmodule Issues.CLI do
+
+  import Issues.TableFormatter, only: [ print_table_for_columns: 2 ]
+
   @moduledoc """
   Handle the command line parsing and the dispatch to the various functions that
   end up generating a table of the last _n_ issues in a github project
@@ -37,7 +40,7 @@ defmodule Issues.CLI do
     System.halt(0)
   end
 
-  def process({user, project, _count}) do
+  def process({user, project, count}) do
     Issues.GithubIssues.fetch(user, project)
     |> decode_response
     |> convert_to_list_of_maps
