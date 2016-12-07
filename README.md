@@ -5,7 +5,7 @@ returns the applicable issues.**
 
 ## Installation
 
-1. Clone the repo 
+1. Clone the repo
 ```elixir
 $ git clone https://github.com/jasonpilz/issues.git
 $ cd issues
@@ -20,7 +20,7 @@ $ ./issues elixir-lang elixir
 ```elixir
 usage: issues <user> <project/repo> [ count | 4 ]
 
-example: 
+example:
 $ issues elixir-lang elixir
 numb | created_at           | title
 -----+----------------------+-----------------------------------------
