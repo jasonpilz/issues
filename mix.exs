@@ -22,10 +22,11 @@ defmodule Issues.Mixfile do
 
   defp deps do
     [
-       httpoison: "~> 0.9",
-       poison:    "~> 1.5",
-       ex_doc:    "~> 0.14",
-       earmark:   "~> 1.0"
+      {:httpoison, "~> 0.9"},
+      {:poison,    "~> 1.5"},
+      {:ex_doc,   "~> 0.14"},
+      {:earmark,  "~> 1.0"},
+      {:inch_ex, only: :docs}
     ]
   end
 

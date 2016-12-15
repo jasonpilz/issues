@@ -1,5 +1,7 @@
 # Issues
 
+[![Inline docs](http://inch-ci.org/github/jasonpilz/issues.svg)](http://inch-ci.org/github/jasonpilz/issues)
+
 **Command line app that takes a github repo, user and optional count, and
 returns the applicable issues.**
 
