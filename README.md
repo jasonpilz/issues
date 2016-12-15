@@ -38,3 +38,9 @@ numb | created_at           | title
 ```elixir
 mix test
 ```
+
+**Docs:**
+Report docs coverage to InchCI
+```sh
+MIX_ENV=docs mix inch.report
+```
